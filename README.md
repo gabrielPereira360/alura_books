@@ -7,7 +7,7 @@
 * HTML
 
 * CSS
-* * Swiper JS
+  * Swiper JS
 
 * Flex-box
 
