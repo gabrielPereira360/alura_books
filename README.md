@@ -1,6 +1,8 @@
 # Aura Books Olá, Bem vindo ao projeto Alura Books desenvolvido para simular uma página mobile de vendas de livros.
 
-🛑 No momento o site esta em funcionamento somente em smartphones e dispositivos móveis
+> [!WARNING]
+>  No momento o site esta em funcionamento somente em smartphones e dispositivos móveis (está em processo de adaptação, reesposividade).
+
 
 ## Ferramentas utilizadas:
 
