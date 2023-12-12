@@ -1,5 +1,3 @@
-
-
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -22,23 +20,29 @@
     align-items: center;
 }
 
-.container__titulo{
+.container__titulo {
     display: none;
 }
 
-.container__botao{
+.container__botao {
     display: none;
 }
 
-.container__imagem {
+.container__imagem {    
+    width: 40%;
     padding: 1em;
 }
 
-.favorito{
+.favorito {
     display: block;
 }
 
-.opcoes{
+.logo{
+    margin-left: 1em;
+    width: 30%
+}
+
+.opcoes {
     display: none;
 }
 
@@ -52,7 +56,8 @@
     z-index: 2;
 }
 
-.lista-menu__item,.lista-menu__titulo {
+.lista-menu__item,
+.lista-menu__titulo {
     padding: 1em;
 }
 
@@ -62,7 +67,7 @@
 }
 
 .lista-menu__item {
-    background: var(--azul--gradiente); 
+    background: var(--azul--gradiente);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -73,41 +78,73 @@
     display: block;
 }
 
-@media screen and (min-width: 1024px){
-    .container__titulo, .container__titulo--negrito{
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo--negrito {
         padding-top: 5%;
         font-family: var(--fonte--cabecalho);
         font-size: 30px;
     }
 
-    .container__titulo{
+    .container__titulo {
         display: block;
         font-weight: 400;
     }
 
-    .container__titulo--negrito{
+    .container__titulo--negrito {
         font-weight: 700;
     }
 
-    .opcoes{
+    .opcoes {
         display: flex;
     }
 
-    .opcoes__item{
+    .opcoes__item {
         padding: 0 1em;
         color: #000;
     }
 
-    .opcoes__link{
+    .opcoes__link {
         text-decoration: none;
         color: #000;
     }
 
-    .favorito{
+    .favorito {
         display: none;
     }
 
-    .cabecalho__menu-hamburguer{
+    .cabecalho__menu-hamburguer {
         display: none;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul--gradiente);
+        /* Mantém o gradiente personalizado */
+        -webkit-background-clip: initial;
+        /* Reverte a propriedade para o valor padrão */
+        -webkit-text-fill-color: initial;
+        /* Reverte a propriedade para o valor padrão */
+        background-clip: initial;
+        /* Reverte a propriedade para o valor padrão */
+    }
+
+    .lista-menu__link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .container__imagem{
+        margin: 0 1em;
+        width: 30%;
     }
 }

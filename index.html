@@ -25,12 +25,24 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">BUSINESS</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">DESIGN & UX</a></li>
             </ul>
-            <img src="assets/Logo.svg" alt="Logo da Alura Books" class="container__imagem">
+            <img src="assets/Logo.svg" alt="Logo da Alura Books" class="container__imagem logo">
             <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
 
         <ul class="opcoes">
-            <li class="opcoes__item">CATEGORIAS</li>
+            <input type="checkbox" name="opcoes__menu" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu">
+                <li class="opcoes__item">CATEGORIAS</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">PROGRAMAÇÃO</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">FRONT-END</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">INFRAESTRUTURA</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">BUSINESS</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">DESIGN & UX</a></li>
+            </ul>
+
             <li class="opcoes__item"><a href="#" class="opcoes__link">FAVORITOS</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">MINHA ESTANTE</a></li>
         </ul>
@@ -137,7 +149,8 @@
                     <img src="assets/Estrelinhas.svg" alt="Estrelas para categorizar livro">
                     <h3 class="descricao__titulo">Autora do mês</h3>
                     <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                    <p class="descricao__livro">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                    <p class="descricao__livro">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                    </p>
                 </div>
                 <img class="descricao__imagem" src="assets/Escritora.svg" alt="Foto de Juliana Agarikov">
             </div>
@@ -155,7 +168,7 @@
             </div>
         </div>
     </section>
-        
+
     <section class="topicos">
         <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
         <ul class="topicos__lista">
@@ -191,12 +204,15 @@
         </ul>
     </section>
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__dados">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+       
         <input type="email" class="contato__email" placeholder="Cadastre seu e-mail" name="email" id="email">
     </section>
 
-    <hr/>
+    <hr />
     <footer class="rodape">
         <h2 class="rodape__titulo">Grupo Alura</h2>
     </footer>
