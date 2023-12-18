@@ -9,28 +9,48 @@
 .cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
+    transition: 0.5s;
     background-image: url("../assets/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    margin-right: 1.2em;
 }
+
+.container__rotulo{
+    padding: 0.5em 1em;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    transition: 0.5s;
+    background-image: url("../assets/Menu_aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul--gradiente);
+}
+
 
 .container {
     display: flex;
     align-items: center;
 }
 
-.container__titulo {
-    display: none;
-}
 
-.container__botao {
+.container__botao,
+.container__texto,
+.container__titulo,
+.opcoes {
     display: none;
 }
 
 .container__imagem {    
     width: 40%;
     padding: 1em;
+}
+
+.container__link:hover{
+    opacity: 0.8;
 }
 
 .favorito {
@@ -42,9 +62,6 @@
     width: 30%
 }
 
-.opcoes {
-    display: none;
-}
 
 .lista-menu {
     display: none;
@@ -58,7 +75,7 @@
 
 .lista-menu__item,
 .lista-menu__titulo {
-    padding: 1em;
+    padding: 1em 1em 1em 1.5em;
 }
 
 .lista-menu__titulo {
@@ -79,6 +96,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    .cabecalho{
+        padding: 0.5em 2em;
+    }
 
     .container__titulo,
     .container__titulo--negrito {
@@ -101,23 +122,26 @@
     }
 
     .opcoes__item {
-        padding: 0 1em;
+        padding: 1em 1em;
         color: #000;
+        font-weight: 500;
     }
 
     .opcoes__link {
         text-decoration: none;
         color: #000;
+        font-weight: 500;
     }
 
-    .favorito {
-        display: none;
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item{
+        transition: 0.1s;
+        background: var(--azul--gradiente);
+        color: var(--branco);
     }
-
-    .cabecalho__menu-hamburguer {
-        display: none;
-    }
-
+    
+    .favorito,
+    .container__rotulo,
+    .cabecalho__menu-hamburguer,
     .opcoes__botao {
         display: none;
     }
@@ -125,6 +149,10 @@
     .opcoes__botao:checked~.lista-menu {
         display: block;
         width: auto;
+    }
+
+    .lista-menu{
+        top: 70%;
     }
 
     .lista-menu__item:hover {
@@ -146,5 +174,38 @@
     .container__imagem{
         margin: 0 1em;
         width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__imagem{
+        width: 15%;
+        margin: 0;
+    }
+
+    .perfil{
+        width: 20%;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__texto{
+        display: block;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .container__titulo{
+        margin-right: 1em;
+    }
+
+    .opcoes{
+        margin-right: auto;
     }
 }

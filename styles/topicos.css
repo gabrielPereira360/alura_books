@@ -22,6 +22,11 @@
     margin: 0.4em;
 }
 
+.topicos__lista__item:hover {
+    opacity: 0.9;
+}
+
+
 .topicos__link {
     color: var(--branco);
     font-size: 14px;
@@ -41,5 +46,11 @@
     .topicos__lista__item {
         padding: 1em;
         margin: 0.5em
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 2em 1em;
     }
 }
