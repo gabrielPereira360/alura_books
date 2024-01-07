@@ -1,4 +1,4 @@
-# Aura Books Olá, Bem vindo ao projeto Alura Books desenvolvido para simular uma página mobile de vendas de livros online.
+# Aura Books Olá, Bem vindo ao projeto Alura Books desenvolvido para simular uma página mobile de vendas de livros.
 
 - Projeto realizado com a metodologia Mobile First
 
