@@ -4,7 +4,7 @@
 
 ## Prévias
 - Desktop
-![Desktop preview](https://github.com/gabrielPereira360/alura_books/assets/152038489/fdcac44e-dd0b-4b24-a7c1-268d1ba54c91)
+<img src="https://github.com/gabrielPereira360/alura_books/assets/152038489/fdcac44e-dd0b-4b24-a7c1-268d1ba54c91" width="400">
 
 - Smartphone
 <img src="https://github.com/gabrielPereira360/alura_books/assets/152038489/4b603613-b089-43ac-b2ac-712a24e495c9" width="250">
